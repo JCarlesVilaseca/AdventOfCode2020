@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace AdventOfCode2020
 {
@@ -6,7 +7,16 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Day  1 - Part1: {Day01.Part1()} Part2: {Day01.Part2()}");
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+
+            Day01.Solve();
+            Day02.Solve();
+
+            var elapsed = stopwatch.Elapsed;
+
+            Console.WriteLine($"\nTime: {elapsed}");
         }
     }
 }
