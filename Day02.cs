@@ -10,7 +10,7 @@ namespace AdventOfCode2020
         public static void Solve()
         {
             var policies = from line in File.ReadAllLines("Day02.txt")
-                           let parts = Regex.Match(line, @"([0-9]*)-([0-9]*) (.): (\w*)")
+                           let parts = Regex.Match(line, @"(\d+)-(\d+) (.): (.*)")
                            select new {
                                Min = int.Parse(parts.Groups[1].Value),
                                Max = int.Parse(parts.Groups[2].Value),
