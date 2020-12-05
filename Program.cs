@@ -15,6 +15,7 @@ namespace AdventOfCode2020
             Day02.Solve();
             Day03.Solve();
             Day04.Solve();
+            Day05.Solve();
 
             var elapsed = stopwatch.Elapsed;
 
