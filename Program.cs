@@ -5,7 +5,7 @@ namespace AdventOfCode2020
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var stopwatch = new Stopwatch();
 
@@ -16,6 +16,7 @@ namespace AdventOfCode2020
             Day03.Solve();
             Day04.Solve();
             Day05.Solve();
+            Day06.Solve();
 
             var elapsed = stopwatch.Elapsed;
 
