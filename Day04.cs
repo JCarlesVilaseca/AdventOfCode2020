@@ -38,8 +38,8 @@ namespace AdventOfCode2020
                          select groups.Select(g => new { field = g.Groups[1].Value, value = g.Groups[2].Value });
 
             var part1 = from p in parsed
-                       where validations.All(validation => p.Any(x => x.field == validation.Name))
-                       select p;
+                        where validations.All(validation => p.Any(x => x.field == validation.Name))
+                        select p;
 
             var part2 = from p in part1
                         where p.All(x =>

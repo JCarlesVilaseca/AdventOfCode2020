@@ -10,9 +10,10 @@ namespace AdventOfCode2020
         public static void Solve()
         {
             var input = from line in File.ReadLines("Day05.txt")
-                        let bin = Convert.ToInt32(line.Replace("B", "1").Replace("F", "0").Replace("R", "1").Replace("L", "0"), 2)
-                        orderby bin
-                        select bin;
+                        select Convert.ToInt32(line.Replace("B", "1")
+                                                   .Replace("F", "0")
+                                                   .Replace("R", "1")
+                                                   .Replace("L", "0"), 2);
 
             var min = input.Min();
             var max = input.Max();
