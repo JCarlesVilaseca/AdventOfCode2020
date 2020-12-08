@@ -19,8 +19,6 @@ namespace AdventOfCode2020
                         let common = groups.Split('\n').Aggregate((prev, it) => string.Concat(it.Intersect(prev)))
                         select common.Length;
 
-            part2.ToList().ForEach(Console.WriteLine);
-
             Console.WriteLine($"Day  6 - Part1: {part1.Sum()}\t\tPart 2: {part2.Sum()}");
         }
     }
